@@ -1,0 +1,9 @@
+name: Trigger on push main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yaml
